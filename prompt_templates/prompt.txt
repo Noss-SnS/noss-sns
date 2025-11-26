@@ -1,0 +1,3 @@
+Use this prompt as a base for generating a static website (HTML+CSS) in Arabic or English.
+Input placeholders: {{title}}, {{type}}, {{colors}}, {{desc}}
+Output: JSON only with fields: html, css, assets (array)

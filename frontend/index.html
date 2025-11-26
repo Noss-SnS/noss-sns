@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Site Maker - مولد المواقع بالذكاء الاصطناعي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>مولد المواقع بالذكاء الاصطناعي (بدون مفتاح API)</h1>
+    <form id="specForm">
+      <label>عنوان الموقع
+        <input type="text" id="title" placeholder="مثال: متجر الأدوات" required>
+      </label>
+      <label>نوع الموقع
+        <select id="type">
+          <option value="landing">صفحة هبوط</option>
+          <option value="blog">مدونة</option>
+          <option value="shop">متجر رقمي</option>
+        </select>
+      </label>
+      <label>أرجاء الألوان (مثال: #0ea5a4,#ffffff)
+        <input type="text" id="colors" placeholder="#0ea5a4,#ffffff">
+      </label>
+      <label>وصف قصير للموقع
+        <textarea id="desc" placeholder="اكتب وصفًا موجزًا لما تريد"></textarea>
+      </label>
+      <div class="actions">
+        <button type="submit">إنشاء الموقع</button>
+      </div>
+    </form>
+
+    <section id="result" hidden>
+      <h2>النتيجة</h2>
+      <p id="status">جارٍ الإنشاء...</p>
+      <a id="downloadLink" href="#" target="_blank">تحميل ملف ZIP</a>
+      <h3>معاينة</h3>
+      <iframe id="previewFrame" src="" sandbox="allow-same-origin allow-scripts"></iframe>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
